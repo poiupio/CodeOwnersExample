@@ -1,0 +1,11 @@
+# This is a comment.
+
+# These owners will be the default owners for everything
+*       @global-owner1 @global-owner2
+
+# only @js-owner and not the global owner(s) will be
+# requested for a review in javascript docs.
+*.js    @js-owner
+
+# @doctocat owns any files in the build/logs directory
+/build/logs/ @doctocat
